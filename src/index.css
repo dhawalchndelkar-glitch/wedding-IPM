@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cinzel', 'Noto Sans Devanagari', Georgia, serif;
+    --font-sans: 'Plus Jakarta Sans', 'Noto Sans Devanagari', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #FAF8F5;
+    color: #1c1917;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  /* Ensure Indian Rupee symbol does not fail in Cinzel */
+  .currency-symbol {
+    font-family: var(--font-sans);
+    font-weight: 700;
+  }
+}
+
+/* Custom scrollbar for horizontal sub-navs & tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f5f0e8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d4af37;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b89726;
+}
+
+/* Print Styles for Master Wedding Plan PDF / Run-Sheet */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+}

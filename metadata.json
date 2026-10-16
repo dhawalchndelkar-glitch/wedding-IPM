@@ -1,0 +1,6 @@
+{
+  "name": "Shubh Bandhan - All-in-One Indian Wedding Platform",
+  "description": "The digital command center for planning multi-day Indian weddings: budget allocator, ceremony timelines, guest & logistics engine, vendor comparison matrix, outfit color coordination, and day-of execution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
